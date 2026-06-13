@@ -118,14 +118,25 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section" style="min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #ffffff 0%, #eaf3f3 100%); padding: 120px 0 60px;">
+    <style>
+      
+    </style>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="min-height: 100vh; position: relative; display: flex; align-items: center; background: linear-gradient(135deg, #ffffff 0%, #eaf3f3 100%); padding: 120px 0 60px;">
+
+      <!-- Background floating circles -->
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0;">
+        <div style="position: absolute; border-radius: 50%; background: #175cdd; opacity: 0.08; width: 400px; height: 400px; top: -100px; left: -100px; animation: floatA 6s ease-in-out infinite;"></div>
+        <div style="position: absolute; border-radius: 50%; background: #2d6e6e; opacity: 0.08; width: 300px; height: 300px; bottom: -80px; right: -80px; animation: floatB 8s ease-in-out infinite;"></div>
+        <div style="position: absolute; border-radius: 50%; background: #175cdd; opacity: 0.06; width: 200px; height: 200px; top: 50%; left: -60px; transform: translateY(-50%); animation: floatC 7s ease-in-out infinite;"></div>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Top label row -->
         <div class="row justify-content-center mb-1">
           <div class="col-lg-8 text-center">
+            
             <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(45,110,110,0.1); border: 1px solid rgba(45,110,110,0.2); border-radius: 30px; padding: 8px 20px; margin-bottom: 24px;">
               <i class="bi bi-heart-pulse" style="color: #2d6e6e;"></i>
               <span style="font-size: 13px; font-weight: 600; color: #2d6e6e; letter-spacing: 0.05em; text-transform: uppercase;">Nurse-Founded · Michigan-Based · Client-Centered</span>

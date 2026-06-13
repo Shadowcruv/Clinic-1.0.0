@@ -35,5 +35,18 @@
   padding: 0;
 }
 
+@keyframes floatA {
+0%, 100% { transform: translateY(0px) scale(1); }
+50% { transform: translateY(-40px) scale(1.05); }
+}
+@keyframes floatB {
+0%, 100% { transform: translateY(0px) scale(1); }
+50% { transform: translateY(-30px) scale(1.08); }
+}
+@keyframes floatC {
+0%, 100% { transform: translateY(-50%) scale(1); }
+50% { transform: translateY(-70%) scale(1.1); }
+}
+
 
 
